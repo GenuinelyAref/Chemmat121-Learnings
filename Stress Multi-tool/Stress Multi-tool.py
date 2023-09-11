@@ -37,7 +37,7 @@ def find_cross_sect_area(var_stress, var_force):
 # stress = 0  # set stress value (MPa)
 
 round_dp = 1
-mode = input("What would you like to find?\nStress (A)\nForce (B)\nDiameter (C)\nType here: ").lower
+mode = input("What would you like to find?\nStress (A)\nForce (B)\nDiameter (C)\nType here: ").lower()
 
 if mode == 'a':
     force = float(input('Enter applied load in kN: '))
