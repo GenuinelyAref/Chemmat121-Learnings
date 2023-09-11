@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Chemmat121-Learnings.iml" filepath="$PROJECT_DIR$/.idea/Chemmat121-Learnings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stress Multi-tool/.idea/Stress Multi-tool.iml" filepath="$PROJECT_DIR$/Stress Multi-tool/.idea/Stress Multi-tool.iml" />
+    </modules>
+  </component>
+</project>
