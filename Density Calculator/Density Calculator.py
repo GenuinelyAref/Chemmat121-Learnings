@@ -39,21 +39,40 @@ def find_atomic_radius(var_n, var_atomic_mass, var_avogadro_num, var_density, va
     return var_atomic_radius
 
 
-structure_type = 'bcc'  # could also be 'fcc'
-atomic_radius = 0.124  # in nanometers
-atomic_mass = 55.85  # in g mol^-1
+def find_atomic_mass(var_n, var_volume, var_avogadro_num, var_density):
+    var_atomic_mass = (var_volume * var_avogadro_num * var_density) / var_n
+    return var_atomic_mass
+
+
+structure_type = 'fcc'  # could also be 'fcc'
+# atomic_mass = 55.85  # in g mol^-1
 avogadro_num = 6.022 * (10 ** 23)  # in mol^-1
 rounding_dp = 5  # 3dp of rounding
+mode = 1  # mode 1 for finding density, mode 2 for finding atomic radius, mode 3 for finding atomic (molar) mass
+
+# Mode system bugged (needs fixing)
 
 # calculate volume
 volume = find_volume(structure_type, atomic_radius)
 # calculate number of atoms in unit cell
 n = get_atom_num(structure_type)
 
-# calculate density
-density = find_density(n, atomic_mass, volume, avogadro_num)
-# calculate atomic radius
-atomic_radius_test = find_atomic_radius(n, atomic_mass, avogadro_num, density, structure_type)
+if mode == 1:
+    atomic_radius = 0.128  # in nanometers
+    # calculate density
+    atomic_mass = 63.546
+    density = find_density(n, atomic_mass, volume, avogadro_num)
+elif mode == 2:
+    # calculate atomic radius
+    atomic_radius_test = find_atomic_radius(n, atomic_mass, avogadro_num, density, structure_type)
+else:
+    # calculate atomic mass:
 
-print("Density: {} g/cm\u00b3".format(round(density, rounding_dp)))
-print("Atomic radius = {} nm".format(round(atomic_radius_test, rounding_dp)))
+
+density = 8.895
+
+atomic_mass = find_atomic_mass(n, volume, avogadro_num, density)
+
+# print("Density: {} g/cm\u00b3".format(round(density, rounding_dp)))
+# print("Atomic radius = {} nm".format(round(atomic_radius_test, rounding_dp)))
+print("Atomic mass = {}g".format(round(atomic_mass, rounding_dp)))
