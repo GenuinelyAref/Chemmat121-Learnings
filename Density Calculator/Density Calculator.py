@@ -48,8 +48,8 @@ def find_atomic_mass(var_n, var_volume, var_avogadro_num, var_density):
 avogadro_num = 6.022 * (10 ** 23)  # in mol^-1
 
 structure_type = 'fcc'  # could also be 'fcc'
-rounding_dp = 5  # 3dp of rounding
-mode = 3  # mode 1 for finding density, mode 2 for finding atomic radius, mode 3 for finding atomic (molar) mass
+rounding_dp = 3  # 3dp of rounding
+mode = 1  # mode 1 for finding density, mode 2 for finding atomic radius, mode 3 for finding atomic (molar) mass
 
 # calculate number of atoms in unit cell
 n = get_atom_num(structure_type)
@@ -57,33 +57,33 @@ n = get_atom_num(structure_type)
 # find density
 if mode == 1:
     # set atomic radius
-    atomic_radius = 0.128  # in nanometers
+    atomic_radius = float(input("Enter the atomic radius in nanometres: "))  # in nanometers
     # calculate volume
     volume = find_volume(structure_type, atomic_radius)  # in cm^3
     # set atomic mass
-    atomic_mass = 63.546  # in g mol^-1
+    atomic_mass = float(input("Enter the atomic mass in g/mol: "))  # in g mol^-1
     # calculate density
     density = find_density(n, atomic_mass, volume, avogadro_num)  # in g/cm^3
-    print("Density: {} g/cm\u00b3".format(round(density, rounding_dp)))
+    print("\nDensity: {} g/cm\u00b3".format(round(density, rounding_dp)))
 
 # find atomic radius
 elif mode == 2:
     # set atomic mass
-    atomic_mass = 63.546  # in g mol^-1
+    atomic_mass = float(input("Enter the atomic mass in g/mol: "))  # in g mol^-1
     # set density
-    density = 8.895  # in g/cm^3
+    density = float(input("Enter the density in g/cm^3: "))  # in g/cm^3
     # calculate atomic radius
     atomic_radius = find_atomic_radius(n, atomic_mass, avogadro_num, density, structure_type)  # in nanometres
-    print("Atomic radius = {} nm".format(round(atomic_radius, rounding_dp)))
+    print("\nAtomic radius = {} nm".format(round(atomic_radius, rounding_dp)))
 
 # find atomic mass
 else:
     # set density
-    density = 8.895  # in g/cm^3
+    density = float(input("Enter the density in g/cm^3: "))  # in g/cm^3
     # set atomic radius
-    atomic_radius = 0.128  # in nanometers
+    atomic_radius = float(input("Enter the atomic radius in nanometres: "))  # in nanometers
     # calculate volume
     volume = find_volume(structure_type, atomic_radius)  # in cm^3
     # calculate atomic mass:
     atomic_mass = find_atomic_mass(n, volume, avogadro_num, density)  # in g mol^-1
-    print("Atomic mass = {}g".format(round(atomic_mass, rounding_dp)))
+    print("\nAtomic mass = {}g".format(round(atomic_mass, rounding_dp)))
