@@ -55,7 +55,7 @@
       <workItem from="1694865238283" duration="1942000" />
       <workItem from="1695023900836" duration="10000" />
       <workItem from="1695038010767" duration="1038000" />
-      <workItem from="1695124461393" duration="313000" />
+      <workItem from="1695124461393" duration="1051000" />
     </task>
     <servers />
   </component>
@@ -65,6 +65,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Chemmat121_Learnings$Hall_Petch_Calculator.coverage" NAME="Hall-Petch Calculator Coverage Results" MODIFIED="1694438475985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hall-Petch Calculator" />
     <SUITE FILE_PATH="coverage/Chemmat121_Learnings$test.coverage" NAME="test Coverage Results" MODIFIED="1694437459278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hall-Petch Calculator" />
+    <SUITE FILE_PATH="coverage/Chemmat121_Learnings$Arrhenius_Equation_Calculator.coverage" NAME="Arrhenius-Equation Calculator Coverage Results" MODIFIED="1695124791440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arrhenius Equation" />
     <SUITE FILE_PATH="coverage/Chemmat121_Learnings$Density_Calculator.coverage" NAME="Density Calculator Coverage Results" MODIFIED="1694866516645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Density Calculator" />
   </component>
 </project>
