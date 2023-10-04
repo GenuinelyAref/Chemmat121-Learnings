@@ -42,17 +42,31 @@ def convert_si_units(var_value, var_order_magnitude):
     return var_si_equivalent
 
 
-def convert_conventional
+def convert_conventional_unit(var_value, var_order_magnitude):
+    var_conventional_unit = var_value * (1 / (10 ** var_order_magnitude))
+    return var_conventional_unit
 
 
 # MAIN ROUTINE
-a = 12  # in mm
-nominal_stress = 38  # in MPa
-y = 0.8  # dimensionless geometric constant
+# constants
+stress_magnitude = 6  # Mega in MPa --> 10^(6)
+k_1_magnitude = 6  # Mega in MPa m^0.5 --> 10^(6)
+a_magnitude = -3  # milli in mm --> 10^(-3)
+
+
+# values used
+rounding_dp = 2  # number of decimal places to round output to
+a = 11.3  # in mm
+nominal_stress = 592  # in MPa
+y = 1.2  # dimensionless geometric constant
+
+# adjust value of a depending on crack size
+a = a_type_calculation(a, "internal")
 
 # convert all units to SI
-a = convert_si_units(a, -3)
-nominal_stress = convert_si_units(nominal_stress, 6)
+a = convert_si_units(a, a_magnitude)
+nominal_stress = convert_si_units(nominal_stress, stress_magnitude)
 
 k_1_value = k_1_calculation(y, nominal_stress, a)
-print("K_1 value is: {}".format(k_1_value))
+k_1_value = convert_conventional_unit(k_1_value, k_1_magnitude)
+print("K\u2081 value is: {} MPa m^0.5".format(round(k_1_value, rounding_dp)))
