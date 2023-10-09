@@ -34,7 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/aroof/Desktop/Computer Science/Programming/Uni work/Chemmat121-Learnings/Arrhenius Equation/Arrhenius-Equation Calculator.py",
+    "last_opened_file_path": "C:/Users/aroof/Desktop/Computer Science/Programming/Uni work/Chemmat121-Learnings/Creep Rate Equation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,7 +42,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Fracture Mechanics Equation">
+  <component name="RunManager">
     <configuration name="Fracture Mechanics Equation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Fracture Mechanics Equation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696416197168</updated>
-      <workItem from="1696416198471" duration="1483000" />
+      <workItem from="1696416198471" duration="1689000" />
+      <workItem from="1696846783142" duration="1410000" />
     </task>
     <servers />
   </component>
@@ -109,6 +110,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Fracture_Mechanics_Equation$Fracture_Mechanics_Equation.coverage" NAME="Fracture Mechanics Equation Coverage Results" MODIFIED="1696417604073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Fracture_Mechanics_Equation$Fracture_Mechanics_Equation.coverage" NAME="Fracture Mechanics Equation Coverage Results" MODIFIED="1696417700473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Fracture_Mechanics_Equation$Arrhenius_Equation_Calculator.coverage" NAME="Arrhenius-Equation Calculator Coverage Results" MODIFIED="1696847506942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arrhenius Equation" />
+    <SUITE FILE_PATH="coverage/Fracture_Mechanics_Equation$Creep_Rate_Calculator.coverage" NAME="Creep Rate Calculator Coverage Results" MODIFIED="1696847608472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Creep Rate Equation" />
   </component>
 </project>

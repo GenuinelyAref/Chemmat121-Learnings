@@ -22,6 +22,6 @@ universal_gas_constant = 8.314  # J / mol K
 mode = 1  # modes: 1 --> rate, 2 --> temperature
 
 if mode == 1:
-    print(calc_rate(3*10^-6, 40000, universal_gas_constant, celsius_to_kelvin(85)))
+    print(calc_rate(3*(10^-6), 40000, universal_gas_constant, celsius_to_kelvin(85)))
 elif mode == 2:
     print(calc_temp(3*10^-6, 40000, universal_gas_constant, ))
