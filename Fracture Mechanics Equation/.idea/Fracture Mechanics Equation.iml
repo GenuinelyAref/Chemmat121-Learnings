@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Hall-Petch Calculator" />
     <orderEntry type="module" module-name="Creep Rate Equation" />
+    <orderEntry type="module" module-name="Faraday Equation" />
   </component>
 </module>
