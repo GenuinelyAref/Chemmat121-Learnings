@@ -1,0 +1,1 @@
+# program to calculate the different parameters of Faraday's equation
