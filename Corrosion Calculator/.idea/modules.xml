@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../.idea/Chemmat121-Learnings.iml" filepath="$PROJECT_DIR$/../.idea/Chemmat121-Learnings.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Corrosion Calculator.iml" filepath="$PROJECT_DIR$/.idea/Corrosion Calculator.iml" />
     </modules>
   </component>
